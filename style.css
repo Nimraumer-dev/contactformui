@@ -52,58 +52,53 @@
 }
 
 .box input {
-    width: 80%;
     font-family: "Inter", sans-serif;
-    margin-left: 10px;
-    margin-right: 10px;
     background-color: transparent;
-
     padding: 15px;
     border: #B3D8A8 solid 1px;
     border-radius: 6px;
+    width: 100%;
 }
 
 .box textarea {
     font-family: "Inter", sans-serif;
     padding: 15px;
-    width: 80%;
-    margin-left: 10px;
-    margin-right: 10px;
     background-color: transparent;
     border: #B3D8A8 solid 1px;
     border-radius: 6px;
+    width: 100%;
 
 
 }
 
-.first {
+/* .first {
     margin-right: 15px;
     flex: 1;
     max-width: 270px;
     width: 100%;
 
 
-}
+} */
 
-.box .second {
+/* .box .second {
     max-width: 599px;
     width: 100%;
 
 
-}
+} */
 
 .checkbox-row {
     display: flex;
     align-items: flex-start;
-    gap: 12px;
+    gap: 8px;
     margin: 15px 0;
-    margin-top: 10px;
+    margin-top: 5px;
     flex-wrap: nowrap;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     color: #6B6B6B;
     cursor: pointer;
-    
+
 
 
 }
@@ -112,16 +107,13 @@
     flex-shrink: 0;
     width: 20px;
     height: 20px;
-margin-top: 3px;
-margin-left: 10px;
-margin-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
     accent-color: var(--green-color);
 }
 
 .checkbox-row label {
-    margin-left: 10px;
-    margin-right: 10px;
-    line-height: 1.4;
+    line-height: 1.8;
     flex: 1;
 }
 
@@ -141,7 +133,6 @@ textarea::placeholder {
     color: var(--white-color);
     width: 200px;
     height: 45px;
-    margin-left: 10px;
     border: 1px #B3D8A8 solid;
     background-color: #3D8D7A;
     border-radius: 6px;
@@ -186,12 +177,11 @@ textarea::placeholder {
 
     .box input,
     .box textarea {
-        width: 100% !important;
         font-size: 15px;
         padding: 12px;
     }
 
-    .name-row{
+    .name-row {
         flex-direction: row;
         gap: 12px;
     }
