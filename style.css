@@ -45,6 +45,7 @@
 }
 
 .name-row input {
+    width: 100%;
     flex: 1;
     min-width: 0;
 
@@ -77,57 +78,35 @@
 
 .first {
     margin-right: 15px;
+    flex: 1;
     max-width: 270px;
+    width: 100%;
 
 
 }
 
 .box .second {
-    width: 599px;
+    max-width: 599px;
+    width: 100%;
 
 
 }
-
-/* .checkbox {
-    font-family: "Inter", sans-serif;
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-    font-size: 14px;
-    cursor: pointer;
-    color: #6B6B6B;
-    margin: 15px 0;
-    margin-top: 10px;
-    flex-wrap: wrap;
-}
-
-.checkbox input {
-
-    background-color: var(--color);
-    width: 20px;
-    height: 20px;
-    accent-color: var(--green-color);
-    margin-top: 0;
-} */
-
-
-
-
-
-
 
 .checkbox-row {
     display: flex;
     align-items: flex-start;
-    gap: 8px;
+    gap: 12px;
     margin: 15px 0;
-    
     margin-top: 10px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     font-family: "Inter", sans-serif;
     font-size: 14px;
     color: #6B6B6B;
     cursor: pointer;
+    overflow-x: auto;
+
+
 }
 
 .checkbox-row input[type="checkbox"] {
@@ -135,10 +114,14 @@
     width: 20px;
     height: 20px;
 margin-top: 3px;
+margin-left: 10px;
+margin-right: 10px;
     accent-color: var(--green-color);
 }
 
 .checkbox-row label {
+    margin-left: 10px;
+    margin-right: 10px;
     line-height: 1.4;
     flex: 1;
 }
@@ -209,7 +192,12 @@ textarea::placeholder {
         padding: 12px;
     }
 
-    .checkbox {
+    .name-row{
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .checkbox-row {
         flex-wrap: wrap;
         font-size: 13px;
     }
@@ -236,7 +224,7 @@ textarea::placeholder {
         padding: 10px;
     }
 
-    .checkbox {
+    .checkbox-row {
         font-size: 12px;
     }
 
