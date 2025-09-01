@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
@@ -17,26 +17,39 @@
         <form action="#" id="contactForm">
             <h1>Get In Touch</h1>
             <div class="name-row">
-            <input type="text" name="First name" id="name" placeholder="First Name" class="first" required>
-            <input type="text" name="last nmae" id="name" placeholder="Last Name" class="first" required>
-        </div>
+                <input type="text" name="First name" id="name" placeholder="First Name" class="first" required>
+                <input type="text" name="last nmae" id="name" placeholder="Last Name" class="first" required>
+            </div>
             <br><br>
-            <input type="email" name="email" id="email" placeholder="Email Adress" required class="second">
-            <br><br><br>
-            <input type="text" name="subject line" id="subject line" placeholder="Subject Line" class="second">
-            <br><br><br>
-            <textarea name="textarea" id="textarea" rows="9" cols="45" placeholder="Drop Your Message"class="second"></textarea>
+            <div class="name-row">
+                <input type="email" name="email" id="email" placeholder="Email Adress" required class="second">
+            </div>
+            <br><br>
+
+            <div class="name-row">
+                <input type="text" name="subject line" id="subject line" placeholder="Subject Line" class="second">
+            </div>
+
+            <br><br>
+            <div class="name-row">
+                <textarea name="textarea" id="textarea" rows="9" cols="45" placeholder="Drop Your Message"></textarea>
+            </div>
+
             <br><br>
             <div class="checkbox-row">
-               <input type="checkbox"  id="agree">
-               <label for="agree">
-                I've read and agree with <a href="#">terms</a>and <a href="#">privacy policy</a>
-               </label>
+                <input type="checkbox" id="agree">
+                <label for="agree">
+                    I've read and agree with <a href="#">terms</a>and <a href="#">privacy policy</a>
+                </label>
             </div>
-            <button class="btn" type="submit">
-                Send Message
-                <i class="fa-solid fa-paper-plane"></i>
-            </button>
+            <div class="checkbox-row">
+
+                <button class="btn" type="submit">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+            </div>
+
         </form>
         <br>
 
